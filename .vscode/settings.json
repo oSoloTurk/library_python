@@ -1,0 +1,28 @@
+{
+    "python.defaultInterpreterPath": "./.venv/bin/python",
+    "python.formatting.provider": "black",
+    "python.linting.enabled": true,
+    "python.linting.maxNumberOfProblems": 200,
+    "python.linting.ignorePatterns": [
+        "**/site-packages/**/*.py",
+        ".vscode/*.py"
+    ],
+    "python.linting.pylintEnabled": false,
+    "python.linting.pylintArgs": [
+        "--enable=W0614",
+        "--disable=I0011",
+        "--disable=C0103",
+        "--disable=C0111",
+        "--disable=C0115",
+        "--reports=12",
+        "--enable=unused-import",
+    ],
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+        "--max-line-length=88",
+        "--verbose"
+    ],
+    "python.linting.flake8CategorySeverity.F": "Error",
+    "python.linting.flake8CategorySeverity.E": "Error",
+    "files.trimTrailingWhitespace": true,
+}
